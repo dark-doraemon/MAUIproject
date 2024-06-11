@@ -1,0 +1,1 @@
+C:\Users\tuan\source\repos\BluetoothApp\BluetoothApp.csproj;x64
