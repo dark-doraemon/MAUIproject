@@ -177,3 +177,7 @@ C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win
 C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Plugin.BLE.dll
 C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.sourcelink.json
+C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\InputKit.Maui.dll
+C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Plainer.Maui.dll
+C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UraniumUI.dll
+C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\UraniumUI.Material.dll

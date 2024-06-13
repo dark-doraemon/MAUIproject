@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = BluetoothApp.Pages.Bluetoo
 build_metadata.AdditionalFiles.TargetPath = Pages\BluetoothPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\BluetoothPage.xaml
 
+[C:/Users/tuan/source/repos/BluetoothApp/Pages/CusomTabView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BluetoothApp.Pages.CusomTabView.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CusomTabView.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CusomTabView.xaml
+
 [C:/Users/tuan/source/repos/BluetoothApp/Pages/TestPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BluetoothApp.Pages.TestPage.xaml

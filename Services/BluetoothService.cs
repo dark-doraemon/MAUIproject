@@ -19,7 +19,7 @@ namespace BluetoothApp.Services
         public List<CustomBluetoothDevice> deviceList { get; set; }
         public List<IDevice> idevices { get; set; }
 
-        public static IDevice mainDevice { get; set; } 
+        public static IDevice currentDevice { get; set; } 
         public BluetoothService()
         {
             BluetoothLE = CrossBluetoothLE.Current;

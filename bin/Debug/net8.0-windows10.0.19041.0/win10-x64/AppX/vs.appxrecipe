@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-13T10:01:05.435</Modified>
+      <Modified>2024-06-13T18:18:37.958</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-13T09:28:39.707</Modified>
+      <Modified>2024-06-13T15:49:08.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.runtimeconfig.json">
       <PackagePath>BluetoothApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-13T04:20:10.692</Modified>
+      <Modified>2024-06-13T14:15:44.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.dll">
       <PackagePath>BluetoothApp.dll</PackagePath>
-      <Modified>2024-06-13T10:01:05.079</Modified>
+      <Modified>2024-06-13T18:18:37.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BluetoothApp.exe</PackagePath>
-      <Modified>2024-06-13T10:01:05.168</Modified>
+      <Modified>2024-06-13T18:18:37.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.deps.json">
       <PackagePath>BluetoothApp.deps.json</PackagePath>
-      <Modified>2024-06-13T09:28:39.429</Modified>
+      <Modified>2024-06-13T15:49:08.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -297,6 +297,10 @@
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\inputkit.maui\4.4.3\lib\net8.0-windows10.0.19041\InputKit.Maui.dll">
+      <PackagePath>InputKit.Maui.dll</PackagePath>
+      <Modified>2024-02-24T09:23:44.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
@@ -426,9 +430,21 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-03-11T10:57:44.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\plainer.maui\1.7.1\lib\net8.0-windows10.0.19041\Plainer.Maui.dll">
+      <PackagePath>Plainer.Maui.dll</PackagePath>
+      <Modified>2023-11-30T20:43:42.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\plugin.ble\3.1.0\lib\net8.0-windows10.0.19041\Plugin.BLE.dll">
       <PackagePath>Plugin.BLE.dll</PackagePath>
       <Modified>2024-05-20T21:37:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\uraniumui\2.8.1\lib\net8.0-windows10.0.19041\UraniumUI.dll">
+      <PackagePath>UraniumUI.dll</PackagePath>
+      <Modified>2024-03-20T19:07:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\uraniumui.material\2.8.1\lib\net8.0-windows10.0.19041\UraniumUI.Material.dll">
+      <PackagePath>UraniumUI.Material.dll</PackagePath>
+      <Modified>2024-03-20T19:07:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.maui.controls.core\8.0.21\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>

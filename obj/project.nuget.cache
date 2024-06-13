@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1m7YTmCYzBY=",
+  "dgSpecHash": "Aks2rsSH5NE=",
   "success": true,
   "projectFilePath": "C:\\Users\\tuan\\source\\repos\\BluetoothApp\\BluetoothApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tuan\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
+    "C:\\Users\\tuan\\.nuget\\packages\\inputkit.maui\\4.4.3\\inputkit.maui.4.4.3.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
@@ -28,7 +29,10 @@
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.6\\microsoft.net.illink.tasks.8.0.6.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240311000\\microsoft.windowsappsdk.1.5.240311000.nupkg.sha512",
+    "C:\\Users\\tuan\\.nuget\\packages\\plainer.maui\\1.7.1\\plainer.maui.1.7.1.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\plugin.ble\\3.1.0\\plugin.ble.3.1.0.nupkg.sha512",
+    "C:\\Users\\tuan\\.nuget\\packages\\uraniumui\\2.8.1\\uraniumui.2.8.1.nupkg.sha512",
+    "C:\\Users\\tuan\\.nuget\\packages\\uraniumui.material\\2.8.1\\uraniumui.material.2.8.1.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\tuan\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",

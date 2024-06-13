@@ -15,6 +15,8 @@
           "Microsoft.Maui.Essentials": "8.0.40",
           "Microsoft.Maui.Graphics": "8.0.60",
           "Plugin.BLE": "3.1.0",
+          "UraniumUI": "2.8.1",
+          "UraniumUI.Material": "2.8.1",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.31"
         },
         "runtime": {
@@ -30,6 +32,14 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.4.44211"
+          }
+        }
+      },
+      "InputKit.Maui/4.4.3": {
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/InputKit.Maui.dll": {
+            "assemblyVersion": "4.4.3.0",
+            "fileVersion": "4.4.3.0"
           }
         }
       },
@@ -439,11 +449,43 @@
           }
         }
       },
+      "Plainer.Maui/1.7.1": {
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Plainer.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Plugin.BLE/3.1.0": {
         "runtime": {
           "lib/net8.0-windows10.0.19041/Plugin.BLE.dll": {
             "assemblyVersion": "3.1.0.0",
             "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "UraniumUI/2.8.1": {
+        "dependencies": {
+          "InputKit.Maui": "4.4.3",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Plainer.Maui": "1.7.1"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.dll": {
+            "assemblyVersion": "2.8.1.0",
+            "fileVersion": "2.8.1.0"
+          }
+        }
+      },
+      "UraniumUI.Material/2.8.1": {
+        "dependencies": {
+          "UraniumUI": "2.8.1"
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "assemblyVersion": "2.8.1.0",
+            "fileVersion": "2.8.1.0"
           }
         }
       }
@@ -459,6 +501,13 @@
       "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
+    },
+    "InputKit.Maui/4.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ou3S++/lAX5kJpHvGKW5EYMqfeNTgKr6W8YM4I7gHrrJwRXZ4Jd8KpU//uVIhgrbmu8DcbjyK1mK34ekGMd0aQ==",
+      "path": "inputkit.maui/4.4.3",
+      "hashPath": "inputkit.maui.4.4.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/8.0.0": {
       "type": "package",
@@ -614,12 +663,33 @@
       "path": "microsoft.windowsappsdk/1.5.240311000",
       "hashPath": "microsoft.windowsappsdk.1.5.240311000.nupkg.sha512"
     },
+    "Plainer.Maui/1.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rou+ErJ0l2GkJyMYRKtPiPxEtOGngj7Lv7H5NVACG9baPy3D3tGLO5ma16Usem5/vddu8Ov6bZaXntPMQANXQw==",
+      "path": "plainer.maui/1.7.1",
+      "hashPath": "plainer.maui.1.7.1.nupkg.sha512"
+    },
     "Plugin.BLE/3.1.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-vKwCqysb0FvPsF2pmNL5Qdw2WI+GwlUyF6U56Au6F7y3f2cnhec9RWD1XZg74zRk10LcGibwiRXoJLl5ry8XHw==",
       "path": "plugin.ble/3.1.0",
       "hashPath": "plugin.ble.3.1.0.nupkg.sha512"
+    },
+    "UraniumUI/2.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IYe503jH0v7Gt2/EhyH1kja9GrvSPeMXTvV8anjTaX67PYLX8llsJnqsv7vuJCy1rEPC7dR8LCf0PpHVPlf4TA==",
+      "path": "uraniumui/2.8.1",
+      "hashPath": "uraniumui.2.8.1.nupkg.sha512"
+    },
+    "UraniumUI.Material/2.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AbclZzfld1rojUZsIAOBBdyCW7RC1d5lfUcAgIr0UWpzlen/IuJn61GfOylXFwh/rK7m3erR0+4NHz0Q/xqAcQ==",
+      "path": "uraniumui.material/2.8.1",
+      "hashPath": "uraniumui.material.2.8.1.nupkg.sha512"
     }
   }
 }

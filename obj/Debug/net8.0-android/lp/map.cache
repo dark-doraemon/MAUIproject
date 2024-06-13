@@ -159,3 +159,7 @@ Microsoft.Maui.aar
 Microsoft.Maui.Essentials.aar
 Xamarin.Google.Crypto.Tink.Android.aar
 Xamarin.Google.ErrorProne.Annotations.aar
+InputKit.Maui.dll
+Plainer.Maui.dll
+UraniumUI.dll
+UraniumUI.Material.dll

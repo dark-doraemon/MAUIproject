@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="BluetoothApp.Pages.CustomTabView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+    xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
+    xmlns:vm="clr-namespace:BluetoothApp.Controls.TabViews"
+    x:Name="page">
+
+
+    <ContentPage.BindingContext>
+        <vm:DeviceTabViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Border
+            Margin="10"
+            Padding="0"
+            StyleClass="SurfaceContainer,Rounded">
+            <Grid RowDefinitions="Auto,*">
+                <Button
+                    Margin="10"
+                    Command="{Binding CreateNewTabCommand}"
+                    HorizontalOptions="Center"
+                    StyleClass="OutlinedButton"
+                    Text="New Tab" />
+
+                <material:TabView
+                    Grid.Row="1"
+                    CachingStrategy="CacheOnLayout"
+                    CurrentItem="{Binding CurrentTab, Mode=TwoWay}"
+                    ItemsSource="{Binding TabItems}"
+                    TabHeaderItemColumnWidth="Auto">
+                    <material:TabView.TabHeaderItemTemplate>
+                        <DataTemplate>
+                            <uranium:StatefulContentView TappedCommand="{Binding Command}" WidthRequest="160">
+                                <Grid
+                                    Padding="5,10"
+                                    BackgroundColor="{AppThemeBinding {StaticResource Primary},
+                                                                      Dark={StaticResource PrimaryDark}}"
+                                    ColumnDefinitions="*,Auto">
+
+                                    <Label Text="{Binding Data.Title}" VerticalOptions="Center" />
+
+                                    <uranium:StatefulContentView
+                                        Grid.Column="1"
+                                        Margin="5"
+                                        CommandParameter="{Binding Data}"
+                                        TappedCommand="{Binding Source={x:Reference page}, Path=BindingContext.RemoveTabCommand}"
+                                        VerticalOptions="Center">
+                                        <Path Data="{x:Static uranium:UraniumShapes.X}" Fill="{AppThemeBinding {StaticResource OnSurface}, Dark={StaticResource OnSurfaceDark}}" />
+                                    </uranium:StatefulContentView>
+
+                                    <Grid.Triggers>
+                                        <DataTrigger
+                                            Binding="{Binding IsSelected}"
+                                            TargetType="Grid"
+                                            Value="True">
+                                            <Setter Property="uranium:DynamicTint.BackgroundColorOpacity" Value="0.6" />
+                                        </DataTrigger>
+                                        <DataTrigger
+                                            Binding="{Binding IsSelected}"
+                                            TargetType="Grid"
+                                            Value="False">
+                                            <Setter Property="uranium:DynamicTint.BackgroundColorOpacity" Value="0.05" />
+                                        </DataTrigger>
+                                    </Grid.Triggers>
+                                </Grid>
+                            </uranium:StatefulContentView>
+                        </DataTemplate>
+                    </material:TabView.TabHeaderItemTemplate>
+                    <material:TabView.ItemTemplate>
+                        <DataTemplate>
+                            <WebView Source="{Binding Url, Mode=TwoWay}" VerticalOptions="Fill" />
+                            
+                        </DataTemplate>
+                    </material:TabView.ItemTemplate>
+                </material:TabView>
+            </Grid>
+        </Border>
+    </ContentPage.Content>
+</ContentPage>

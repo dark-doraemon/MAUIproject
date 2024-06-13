@@ -17,6 +17,9 @@
     <MauiXaml Update="Pages\BluetoothPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\CusomTabView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\TestPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

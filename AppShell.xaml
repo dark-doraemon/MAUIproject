@@ -7,19 +7,21 @@
     xmlns:pages="clr-namespace:BluetoothApp.Pages"
     Title="BluetoothApp">
 
-    <TabBar>
+    <TabBar x:Name="mainTabBar">
 
         <Tab Title="Bluetooth scan page">
             <ShellContent ContentTemplate="{DataTemplate pages:BluetoothPage}" Route="BluetoothPage" />
-
         </Tab>
 
-        <Tab Title="Specific device">
-            <ShellContent ContentTemplate="{DataTemplate pages:BluetoothDevicePage}" Route="BluetoothDevicePage" />
-        </Tab>
+        <!--<Tab Title="Bluetooth scan page">
+            <ShellContent ContentTemplate="{DataTemplate pages:CustomTabView}" Route="BluetoothPage" />
+        </Tab>-->
 
     </TabBar>
 
+    <!--<Tab Title="Specific device">
+        <ShellContent ContentTemplate="{DataTemplate pages:BluetoothDevicePage}" Route="BluetoothDevicePage" />
+    </Tab>-->
 
 
 </Shell>
