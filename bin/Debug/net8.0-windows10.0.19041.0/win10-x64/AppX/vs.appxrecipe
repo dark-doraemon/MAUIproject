@@ -19,7 +19,7 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>0155815D7832230263FEB3ADADE26EED01A504B2083E261F08B3F3626A54EE15</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>62F6F9C01CEE2FB78791C0D6346EBD18E6B7219F566D59B33934045FCC48C91A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.bluetoothapp_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.bluetoothapp_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.bluetoothapp</RegisteredPackageID>
@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-11T20:27:56.186</Modified>
+      <Modified>2024-06-13T10:01:05.435</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-11T19:07:49.360</Modified>
+      <Modified>2024-06-13T09:28:39.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.runtimeconfig.json">
       <PackagePath>BluetoothApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-11T18:42:50.402</Modified>
+      <Modified>2024-06-13T04:20:10.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.dll">
       <PackagePath>BluetoothApp.dll</PackagePath>
-      <Modified>2024-06-11T20:27:55.842</Modified>
+      <Modified>2024-06-13T10:01:05.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BluetoothApp.exe</PackagePath>
-      <Modified>2024-06-11T20:27:55.920</Modified>
+      <Modified>2024-06-13T10:01:05.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.deps.json">
       <PackagePath>BluetoothApp.deps.json</PackagePath>
-      <Modified>2024-06-11T19:07:49.162</Modified>
+      <Modified>2024-06-13T09:28:39.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -358,9 +358,9 @@
       <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
       <Modified>2024-05-13T18:30:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.maui.graphics\8.0.40\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+    <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.maui.graphics\8.0.60\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
-      <Modified>2024-05-13T18:28:50.000</Modified>
+      <Modified>2024-06-10T01:31:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.21\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>

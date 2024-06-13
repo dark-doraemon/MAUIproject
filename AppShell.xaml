@@ -5,16 +5,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:BluetoothApp"
     xmlns:pages="clr-namespace:BluetoothApp.Pages"
-    
-    Shell.FlyoutBehavior="Disabled"
     Title="BluetoothApp">
 
-    <ShellContent
-        ContentTemplate="{DataTemplate pages:BluetoothPage}"
-        Route="BluetoothPage" />
+    <TabBar>
 
-    <ShellContent
-        ContentTemplate="{DataTemplate pages:BluetoothDevicePage}"
-        Route="BluetoothDevicePage" />
+        <Tab Title="Bluetooth scan page">
+            <ShellContent ContentTemplate="{DataTemplate pages:BluetoothPage}" Route="BluetoothPage" />
+
+        </Tab>
+
+        <Tab Title="Specific device">
+            <ShellContent ContentTemplate="{DataTemplate pages:BluetoothDevicePage}" Route="BluetoothDevicePage" />
+        </Tab>
+
+    </TabBar>
+
+
 
 </Shell>

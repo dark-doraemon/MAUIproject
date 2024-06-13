@@ -2,6 +2,7 @@
 using Plugin.BLE;
 using Plugin.BLE.Abstractions.Contracts;
 using Plugin.BLE.Abstractions.EventArgs;
+using Plugin.BLE.Abstractions.Exceptions;
 using Plugin.BLE.Abstractions.Extensions;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,12 @@ namespace BluetoothApp.Services
 {
     class BluetoothService
     {
-        public IBluetoothLE BluetoothLE { get; set; }
-        public IAdapter Adapter { get; set; }
+        public static IBluetoothLE BluetoothLE { get; set; }
+        public static IAdapter Adapter { get; set; }
         public List<CustomBluetoothDevice> deviceList { get; set; }
         public List<IDevice> idevices { get; set; }
 
+        public static IDevice mainDevice { get; set; } 
         public BluetoothService()
         {
             BluetoothLE = CrossBluetoothLE.Current;
@@ -42,6 +44,18 @@ namespace BluetoothApp.Services
         {
             deviceList = new List<CustomBluetoothDevice>();
             await Adapter.StartScanningForDevicesAsync();
+        }
+
+        public async Task ConnectToDeviceAsync(IDevice device)
+        {
+            try
+            {
+                await Adapter.ConnectToDeviceAsync(device);
+            }
+            catch (DeviceConnectionException e)
+            {
+
+            }
         }
     }
 }

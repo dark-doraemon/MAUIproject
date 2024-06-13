@@ -29,6 +29,8 @@ namespace BluetoothApp
                 //mPermissionList.add(Manifest.permission.ACCESS_COARSE_LOCATION);
                 //mPermissionList.add(Manifest.permission.ACCESS_FINE_LOCATION);
             }
+
+
             else
             {
                 mPermissionList.Add(Manifest.Permission.AccessCoarseLocation);

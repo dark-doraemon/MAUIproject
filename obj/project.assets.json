@@ -419,7 +419,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -2639,7 +2639,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -4859,7 +4859,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -7079,7 +7079,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -9299,7 +9299,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -11519,7 +11519,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -13739,7 +13739,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -15959,7 +15959,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -18155,7 +18155,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -18589,7 +18589,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -19023,7 +19023,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -19457,7 +19457,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -19891,7 +19891,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -20325,7 +20325,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -20759,7 +20759,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -21193,7 +21193,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-ios17.2/Microsoft.Maui.Graphics.dll": {
@@ -21627,7 +21627,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -22061,7 +22061,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -22495,7 +22495,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -22929,7 +22929,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -23363,7 +23363,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -23797,7 +23797,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -24231,7 +24231,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -24665,7 +24665,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "compile": {
           "lib/net8.0-maccatalyst17.2/Microsoft.Maui.Graphics.dll": {
@@ -25133,7 +25133,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -25708,7 +25708,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -26257,7 +26257,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -26806,7 +26806,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -27355,7 +27355,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -27904,7 +27904,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -28453,7 +28453,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -29005,7 +29005,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.40": {
+      "Microsoft.Maui.Graphics/8.0.60": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.2.0",
@@ -30220,10 +30220,10 @@
         "microsoft.maui.essentials.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics/8.0.40": {
-      "sha512": "QLmEVtH+LxP5Q86CRlQyiwXwk3CB9U7wyo0FES0/JJZvITjH7cuKOwI2rYDbQ68kiBEMCBExWCu9hxkw5cDF2g==",
+    "Microsoft.Maui.Graphics/8.0.60": {
+      "sha512": "rPL2ZW7iV6k+g9S4+3GhCC88/V0F7AIUx5fDEGz1BNY3VUw4+p/SVnvDwiY1tRROT4KMvAjrhUwjfZZ0Z7g+Nw==",
       "type": "package",
-      "path": "microsoft.maui.graphics/8.0.40",
+      "path": "microsoft.maui.graphics/8.0.60",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -30285,7 +30285,7 @@
         "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
-        "microsoft.maui.graphics.8.0.40.nupkg.sha512",
+        "microsoft.maui.graphics.8.0.60.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
@@ -33370,6 +33370,7 @@
       "Microsoft.Maui.Controls >= 8.0.21",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.21",
       "Microsoft.Maui.Essentials >= 8.0.40",
+      "Microsoft.Maui.Graphics >= 8.0.60",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "Plugin.BLE >= 3.1.0"
     ],
@@ -33378,6 +33379,7 @@
       "Microsoft.Maui.Controls >= 8.0.21",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.21",
       "Microsoft.Maui.Essentials >= 8.0.40",
+      "Microsoft.Maui.Graphics >= 8.0.60",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "Plugin.BLE >= 3.1.0"
     ],
@@ -33386,6 +33388,7 @@
       "Microsoft.Maui.Controls >= 8.0.21",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.21",
       "Microsoft.Maui.Essentials >= 8.0.40",
+      "Microsoft.Maui.Graphics >= 8.0.60",
       "Microsoft.NET.ILLink.Tasks >= 8.0.6",
       "Plugin.BLE >= 3.1.0"
     ],
@@ -33394,6 +33397,7 @@
       "Microsoft.Maui.Controls >= 8.0.21",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.21",
       "Microsoft.Maui.Essentials >= 8.0.40",
+      "Microsoft.Maui.Graphics >= 8.0.60",
       "Plugin.BLE >= 3.1.0"
     ]
   },
@@ -33479,6 +33483,10 @@
             "target": "Package",
             "version": "[8.0.40, )"
           },
+          "Microsoft.Maui.Graphics": {
+            "target": "Package",
+            "version": "[8.0.60, )"
+          },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
@@ -33529,6 +33537,10 @@
           "Microsoft.Maui.Essentials": {
             "target": "Package",
             "version": "[8.0.40, )"
+          },
+          "Microsoft.Maui.Graphics": {
+            "target": "Package",
+            "version": "[8.0.60, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
@@ -33581,6 +33593,10 @@
             "target": "Package",
             "version": "[8.0.40, )"
           },
+          "Microsoft.Maui.Graphics": {
+            "target": "Package",
+            "version": "[8.0.60, )"
+          },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
@@ -33632,6 +33648,10 @@
           "Microsoft.Maui.Essentials": {
             "target": "Package",
             "version": "[8.0.40, )"
+          },
+          "Microsoft.Maui.Graphics": {
+            "target": "Package",
+            "version": "[8.0.60, )"
           },
           "Plugin.BLE": {
             "target": "Package",

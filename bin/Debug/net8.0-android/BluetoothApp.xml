@@ -4,5 +4,17 @@
         <name>BluetoothApp</name>
     </assembly>
     <members>
+        <member name="M:BluetoothApp.Services.Interfaces.IBluetoothConnector.GetConnectedDevices">
+            <summary>
+            Gets a list of all Bluetooth devices connected to the phone
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BluetoothApp.Services.Interfaces.IBluetoothConnector.Connect(System.String)">
+            <summary>
+            Connects app to Bluetooth device and writes to device
+            </summary>
+            <param name="deviceName"></param>
+        </member>
     </members>
 </doc>
