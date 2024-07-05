@@ -11436,7 +11436,7 @@
         }
       }
     },
-    "net8.0-android34.0/iossimulator-x64": {
+    "net8.0-android34.0/ios-arm64": {
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -20802,7 +20802,7 @@
         }
       }
     },
-    "net8.0-ios17.2/iossimulator-x64": {
+    "net8.0-ios17.2/ios-arm64": {
       "InputKit.Maui/4.4.3": {
         "type": "package",
         "compile": {
@@ -24810,7 +24810,7 @@
         }
       }
     },
-    "net8.0-maccatalyst17.2/iossimulator-x64": {
+    "net8.0-maccatalyst17.2/ios-arm64": {
       "InputKit.Maui/4.4.3": {
         "type": "package",
         "compile": {
@@ -29433,7 +29433,7 @@
         }
       }
     },
-    "net8.0-windows10.0.19041/iossimulator-x64": {
+    "net8.0-windows10.0.19041/ios-arm64": {
       "InputKit.Maui/4.4.3": {
         "type": "package",
         "compile": {
@@ -36059,7 +36059,7 @@
       "android-x86": {
         "#import": []
       },
-      "iossimulator-x64": {
+      "ios-arm64": {
         "#import": []
       },
       "maccatalyst-x64": {

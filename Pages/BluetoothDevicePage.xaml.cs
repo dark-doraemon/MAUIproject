@@ -1,6 +1,7 @@
 ﻿using BluetoothApp.Services;
 using Plugin.BLE.Abstractions.Contracts;
 using Plugin.BLE.Abstractions.Exceptions;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace BluetoothApp.Pages;
@@ -112,22 +113,50 @@ public partial class BluetoothDevicePage : ContentPage
         await ConnectToADeviceAsync(this.deviceToConnect);
     }
 
+    ObservableCollection<string> readlogs = new ObservableCollection<string>();
     private async Task ReadValueAsync()
     {
         try
         {
             var services = await this.deviceToConnect.GetServicesAsync();
 
-            var characteristic = await services[2].GetCharacteristicsAsync();
+            var characteristics = await services[2].GetCharacteristicsAsync();
 
+            var characteristic = characteristics[0];
 
-            while (isReading)
+            if (characteristic != null)
             {
-                var bytes = await characteristic[0].ReadAsync();
+                if(characteristic.CanUpdate) // check if characteristic supports notify
+                {
 
-                string stringValue = Encoding.UTF8.GetString(bytes.data);
+                    // define a callback function
+                    characteristic.ValueUpdated +=  (o, a) =>
+                    {
 
-                this.lbl_value.Text = $"Value {stringValue}";
+                        var time = DateTime.Now;
+
+                        var bytes = a.Characteristic.Value; // read in received bytes
+
+                        int counter = bytes[0];
+
+                        for (int i = 0; i < bytes.Length; i++)
+                        {
+                            counter = counter | (bytes[i] << i * 8);
+                        }
+
+                        MainThread.BeginInvokeOnMainThread(() =>
+                        {
+                            //readlogs.Add($"{time} - Value: {counter}");
+
+                            //this.log_value.ItemsSource = readlogs.ToList();
+
+                            this.lbl_value.Text = $"{time} - Value: {counter}";
+                        });
+
+                    };
+
+                    await characteristic.StartUpdatesAsync();
+                }
             }
         }
         catch

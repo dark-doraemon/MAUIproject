@@ -18,47 +18,64 @@ namespace BluetoothApp.Pages;
 public partial class BluetoothPage : ContentPage
 {
 
-    List<CustomBluetoothDevice> devices = new List<CustomBluetoothDevice>();
     List<CustomBluetoothDevice> items = new List<CustomBluetoothDevice>();
     List<IDevice> idevices = new List<IDevice>();
-    BluetoothService bluetoothService = new BluetoothService();
+    BluetoothService bluetoothService;
 
+    IAdapter adapter;   
     public BluetoothPage()
     {
+        bluetoothService = new BluetoothService();
         InitializeComponent();
 
-        items = new List<CustomBluetoothDevice>
-        {
-            new CustomBluetoothDevice {Name = "Device 1" ,Description ="Des1"},
-            new CustomBluetoothDevice {Name = "Device 2" ,Description ="Des2"},
-            new CustomBluetoothDevice {Name = "Device 3" ,Description ="Des3"},
-            new CustomBluetoothDevice {Name = "Device 4" ,Description ="Des4"},
-        };
+        items = new List<CustomBluetoothDevice>();
         bluetoothService = new BluetoothService();
+
+        adapter = CrossBluetoothLE.Current.Adapter;
+        adapter.DeviceDiscovered += OnDeviceDiscovered;
         this.collectionView.ItemsSource = items;
     }
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+    }
+    private void OnDeviceDiscovered(object sender, Plugin.BLE.Abstractions.EventArgs.DeviceEventArgs e)
+    {
+        Device.BeginInvokeOnMainThread(() =>
+        {
+            var devices = collectionView.ItemsSource as List<CustomBluetoothDevice> ?? new List<CustomBluetoothDevice>();
+            devices.Add(new CustomBluetoothDevice
+            {
+                Id = e.Device.Id.ToString(),
+                Name = e.Device.Name,
+            });
 
+            idevices.Add(e.Device);
+
+            collectionView.ItemsSource = devices.ToList();
+        });
+    }
     private async void OnOpenBluetooth(object sender, EventArgs e)
     {
-        if (DeviceInfo.Platform == DevicePlatform.WinUI)
-        {
-            if (BluetoothService.BluetoothLE.State == BluetoothState.Off)
-            {
-                //bật bluetooth
-                try
-                {
-                    Process.Start(new ProcessStartInfo
-                    {
-                        FileName = "ms-settings:bluetooth",
-                        UseShellExecute = true
-                    });
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Unable to open Bluetooth settings: " + ex.Message);
-                }
-            }
-        }
+        //if (DeviceInfo.Platform == DevicePlatform.WinUI)
+        //{
+        //    if (BluetoothService.BluetoothLE.State == BluetoothState.Off)
+        //    {
+        //        //bật bluetooth
+        //        try
+        //        {
+        //            Process.Start(new ProcessStartInfo
+        //            {
+        //                FileName = "ms-settings:bluetooth",
+        //                UseShellExecute = true
+        //            });
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Console.WriteLine("Unable to open Bluetooth settings: " + ex.Message);
+        //        }
+        //    }
+        //}
 
 
         //var enable = new Android.Content.Intent(Android.Bluetooth.BluetoothAdapter.ActionRequestEnable);
@@ -80,22 +97,25 @@ public partial class BluetoothPage : ContentPage
     bool isScanning = false;
     private async void OnScanBluetoothDevice(object sender, EventArgs e)
     {
-        if (DeviceInfo.Platform == DevicePlatform.WinUI)
+        this.collectionView.ItemsSource = null;
+        if (BluetoothService.BluetoothLE.State == BluetoothState.Off)
         {
-            if (BluetoothService.BluetoothLE.State == BluetoothState.Off)
-            {
-                DisplayAlert("Message", "Bạn chưa bật bluetooth", "OK");
-                return;
-            }
+            DisplayAlert("Message", "Bạn chưa bật bluetooth", "OK");
+            return;
         }
         actIsBusy.IsRunning = true;
         await Permissions.RequestAsync<Permissions.Bluetooth>();
-        await bluetoothService.ScanForDevicesAsync();
-        this.devices = bluetoothService.deviceList;
-        this.idevices = bluetoothService.idevices;
+
+        await adapter.StartScanningForDevicesAsync();
+
+        //await bluetoothService.ScanForDevicesAsync();
+
+        //this.devices = bluetoothService.deviceList;
+
+        //this.idevices = bluetoothService.idevices;
         actIsBusy.IsRunning = false;
-        DisplayAlert("Message", "Scan hoàn thành", "OK");
-        this.collectionView.ItemsSource = bluetoothService.deviceList;
+        //DisplayAlert("Message", "Scan hoàn thành", "OK");
+        //this.collectionView.ItemsSource = bluetoothService.deviceList;
     }
 
     private async void OnFrameTapped(object sender, TappedEventArgs e)
@@ -103,23 +123,23 @@ public partial class BluetoothPage : ContentPage
 
         // Lấy thiết bị được chọn từ BindingContext của Label
         var selectedDevice = (sender as VisualElement).BindingContext as CustomBluetoothDevice;
-       
+
         if (selectedDevice == null)
         {
             return;
         }
         //Kiểm tra xem thiết bị này đã từng kết nối trước đó chưa
         var shell = (App.Current.MainPage as AppShell);
-        
+
         //nếu đã kết nối thì chuyển sang tab đó không cần tạo tab mới
-        if(AppShell._createdTabs.ContainsKey(selectedDevice.Name))
+        if (AppShell._createdTabs.ContainsKey(selectedDevice.Name))
         {
             shell.CurrentItem = AppShell._createdTabs[selectedDevice.Name];
         }
 
         else
         {
-            
+
             //lấy danh sách các thiết bị vừa quét được
             IDevice? deviceToConnect = this.idevices.FirstOrDefault(d => d.Id.ToString() == selectedDevice.Id);
 

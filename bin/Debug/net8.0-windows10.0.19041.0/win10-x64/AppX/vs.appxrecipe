@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-13T18:18:37.958</Modified>
+      <Modified>2024-06-19T04:19:37.685</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-13T15:49:08.085</Modified>
+      <Modified>2024-06-19T03:35:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.runtimeconfig.json">
       <PackagePath>BluetoothApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-13T14:15:44.128</Modified>
+      <Modified>2024-06-18T16:42:23.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.dll">
       <PackagePath>BluetoothApp.dll</PackagePath>
-      <Modified>2024-06-13T18:18:37.595</Modified>
+      <Modified>2024-06-19T04:19:37.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BluetoothApp.exe</PackagePath>
-      <Modified>2024-06-13T18:18:37.677</Modified>
+      <Modified>2024-06-19T04:19:37.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\source\repos\BluetoothApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BluetoothApp.deps.json">
       <PackagePath>BluetoothApp.deps.json</PackagePath>
-      <Modified>2024-06-13T15:49:08.033</Modified>
+      <Modified>2024-06-19T03:35:26.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tuan\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -24,26 +24,33 @@ namespace BluetoothApp.Services
         {
             BluetoothLE = CrossBluetoothLE.Current;
             Adapter = CrossBluetoothLE.Current.Adapter;
-            Adapter.ScanTimeout = 10000;
             Adapter.DeviceDiscovered += Adapter_DeviceDiscovered;
             deviceList = new List<CustomBluetoothDevice>();
             idevices = new List<IDevice>();
         }
         private async void Adapter_DeviceDiscovered(object sender, DeviceEventArgs e)
         {
-            deviceList.Add(new CustomBluetoothDevice
+
+            Device.BeginInvokeOnMainThread(() =>
             {
-                Id = e.Device.Id.ToString(),
-                Name = e.Device.Name,
+                var devices = deviceList ?? new List<CustomBluetoothDevice>();
+                devices.Add(new CustomBluetoothDevice
+                {
+                    Id = e.Device.Id.ToString(),
+                    Name = e.Device.Name,
+                });
+                idevices.Add(e.Device);
+
             });
 
-            idevices.Add(e.Device);
+            
         }
 
         public async Task ScanForDevicesAsync()
         {
             deviceList = new List<CustomBluetoothDevice>();
             await Adapter.StartScanningForDevicesAsync();
+            
         }
 
         public async Task ConnectToDeviceAsync(IDevice device)

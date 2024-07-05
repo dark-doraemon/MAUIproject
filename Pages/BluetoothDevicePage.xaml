@@ -4,37 +4,70 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="BluetoothDevicePage">
-    <VerticalStackLayout>
+
+    <ScrollView>
 
 
-        <HorizontalStackLayout  HorizontalOptions="Center">
-            <Label
-                x:Name="lblWelcome"
-                Text=""
-                VerticalOptions="Center" />
+        <VerticalStackLayout>
+            <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <!--  Các nhãn  -->
+                <Label
+                    x:Name="lblWelcome"
+                    Text=""
+                    VerticalOptions="Center" />
 
-            <Label Text="----" VerticalOptions="Center" />
-            <Label x:Name="lblId" VerticalOptions="Center" />
-            <Button
-                x:Name="btn_disconnect"
-                Margin="5,0,0,0"
-                Clicked="OnDisconnect"
-                IsVisible="False"
-                Text="Disconnect" />
+                <Label Text="----" VerticalOptions="Center" />
 
-            <Button
-                x:Name="btn_connect"
-                Margin="5,0,0,0"
-                Clicked="OnConnect"
-                IsVisible="False"
-                Text="Connect"  />
+                <Label x:Name="lblId" VerticalOptions="Center" />
 
-        </HorizontalStackLayout>
-        <ActivityIndicator x:Name="actIsBusy" />
+                <!--  Nút bấm Disconnect  -->
+                <Button
+                    x:Name="btn_disconnect"
+                    Margin="5,0,0,0"
+                    Clicked="OnDisconnect"
+                    IsVisible="False"
+                    Text="Disconnect" />
 
-        <Grid>
-            <Label x:Name="lbl_value" Text="Value: "></Label>
-        </Grid>
-        
-    </VerticalStackLayout>
+                <!--  Nút bấm Connect  -->
+                <Button
+                    x:Name="btn_connect"
+                    Margin="5,0,0,0"
+                    Clicked="OnConnect"
+                    IsVisible="False"
+                    Text="Connect" />
+
+                <!--  Hoạt động chỉ thị  -->
+                <ActivityIndicator x:Name="actIsBusy" />
+            </VerticalStackLayout>
+
+            <Grid>
+                <Label x:Name="lbl_value" Text="Value: " />
+            </Grid>
+
+
+            <!--<CollectionView x:Name="log_value" ItemsSource="{Binding readlogs}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame
+                                Margin="5"
+                                Background="Bisque"
+                                CornerRadius="20">
+                                <Grid Padding="0" ColumnDefinitions="*,*">
+                                    <Label
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Margin="5"
+                                        HorizontalOptions="Start"
+                                        Text="{Binding .}"
+                                        TextColor="Black" />
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>-->
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
